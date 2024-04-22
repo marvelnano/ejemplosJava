@@ -2,6 +2,8 @@
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
+Se tiene tres métodos: contar palabras, mostrar una palabra al revés y mostrar mensaje si una palabra tiene vocal o no.
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
