@@ -2,7 +2,7 @@
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-Se tiene tres métodos: contar palabras, mostrar una palabra al revés y mostrar mensaje si una palabra tiene vocal o no.
+Se tiene varios ejemplos: contar palabras, mostrar una palabra al revés, mostrar mensaje si una palabra tiene vocal o no, contar números mayores a uno seleccionado, etc.
 
 ## Folder Structure
 
