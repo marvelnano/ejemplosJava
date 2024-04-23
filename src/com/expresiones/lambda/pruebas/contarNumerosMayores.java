@@ -15,7 +15,9 @@ public class contarNumerosMayores {
         System.out.println("...");
         contarNumerosMayores.programacionFuncional(numeros);
         System.out.println("...");
-        contarNumerosMayores.mostrarMayores(numeros);
+        contarNumerosMayores.mostrarMayoresJava8(numeros);
+        System.out.println("...");
+        contarNumerosMayores.mostrarMayoresJava17(numeros);
     }
 
     public static void programacionImperativa(List<Integer> numeros) {
@@ -33,15 +35,19 @@ public class contarNumerosMayores {
         System.out.println("Contar usando Programación Funcional: " + result);
     }
 
-    public static void mostrarMayores(List<Integer> numeros) {
-        //se usa .collect(Collectors.toList()) a partir java 8 o superior
-        //List<Integer> result = numeros.stream()
-        //.filter(num -> num > 10).collect(Collectors.toList());
-
+    public static void mostrarMayoresJava17(List<Integer> numeros) {
         //se usa directo .toList() a partir de java 16
         List<Integer> result = numeros.stream()
         .filter(num -> num > 10).toList();
 
-        System.out.println("Lista de números mayores a 10: " + result);
+        System.out.println("Lista de números mayores a 10 en Java 17: " + result);
+    }
+
+    public static void mostrarMayoresJava8(List<Integer> numeros) {
+        //se usa .collect(Collectors.toList()) a partir java 8 o superior
+        List<Integer> result = numeros.stream()
+        .filter(num -> num > 10).collect(Collectors.toList());
+
+        System.out.println("Lista de números mayores a 10 en Java 8: " + result);
     }
 }
