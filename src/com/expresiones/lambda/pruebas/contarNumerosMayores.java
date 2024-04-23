@@ -34,8 +34,14 @@ public class contarNumerosMayores {
     }
 
     public static void mostrarMayores(List<Integer> numeros) {
+        //se usa .collect(Collectors.toList()) a partir java 8 o superior
+        //List<Integer> result = numeros.stream()
+        //.filter(num -> num > 10).collect(Collectors.toList());
+
+        //se usa directo .toList() a partir de java 16
         List<Integer> result = numeros.stream()
-        .filter(num -> num > 10).collect(Collectors.toList());
+        .filter(num -> num > 10).toList();
+
         System.out.println("Lista de números mayores a 10: " + result);
     }
 }
