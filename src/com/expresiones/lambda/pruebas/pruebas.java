@@ -1,3 +1,4 @@
+package com.expresiones.lambda.pruebas;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -7,7 +8,9 @@ public class pruebas {
     public static void main(String[] args) throws Exception {
         System.out.println("...");
         pruebas.contarPalabras("hola esto es un texto para contar palabras en el texto");
+        System.out.println("...");
         pruebas.revertirPalabra("hola");
+        System.out.println("...");
         pruebas.validarVocal("mundo");
     }
 
@@ -15,16 +18,15 @@ public class pruebas {
         Map<String, Long> frecuencia = Stream.of(cadena.split(" "))
         .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         frecuencia.forEach((c, v) -> System.out.println("La palabra: " + c + " se repite " + v + " veces."));
-
     }
 
     public static void revertirPalabra(String cadena) {
         String palabraRevertida = new StringBuilder(cadena).reverse().toString();
-        System.out.println(palabraRevertida);
+        System.out.println("La palabra " + cadena + " al revés es: " + palabraRevertida);
     }
 
     public static void validarVocal(String cadena) {
         boolean encontrado = cadena.matches(".*[aeiou]");
-        System.out.println(encontrado?"tiene vocal":"no tiene vocal");
+        System.out.println("La palabra "+ cadena + ": " + (encontrado?"tiene vocal(es)":"no tiene vocal(es)"));
     }
 }
