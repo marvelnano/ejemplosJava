@@ -4,14 +4,16 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class pruebas {
+public class palabras {
     public static void main(String[] args) throws Exception {
         System.out.println("...");
-        pruebas.contarPalabras("hola esto es un texto para contar palabras en el texto");
+        palabras.contarPalabras("hola esto es un texto para contar palabras en el texto");
+
         System.out.println("...");
-        pruebas.revertirPalabra("hola");
+        palabras.revertirPalabra("hola");
+        
         System.out.println("...");
-        pruebas.validarVocal("mundo");
+        palabras.validarVocal("mundo");
     }
 
     public static void contarPalabras(String cadena) {
