@@ -1,4 +1,5 @@
-package com.expresiones.lambda.pruebas;
+package com.ejemplos.expresiones.lambda;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -28,7 +29,7 @@ public class palabras {
     }
 
     public static void validarVocal(String cadena) {
-        boolean encontrado = cadena.matches(".*[aeiou]");
+        boolean encontrado = cadena.matches(".*[aeiou].*");
         System.out.println("La palabra "+ cadena + ": " + (encontrado?"tiene vocal(es)":"no tiene vocal(es)"));
     }
 }

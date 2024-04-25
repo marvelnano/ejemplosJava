@@ -1,4 +1,4 @@
-package com.expresiones.lambda.pruebas;
+package com.ejemplos.expresiones.lambda;
 
 import java.util.List;
 import java.util.stream.Collectors;
